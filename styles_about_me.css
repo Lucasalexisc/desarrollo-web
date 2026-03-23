@@ -1,0 +1,32 @@
+.topbar_about_me{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    border-bottom: 1px solid #b43030;
+    font-family: 'Ubuntu', sans-serif;
+}
+.topbar_inline{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.topbar_menu_item{
+    display: inline-block;
+    margin-right: 15px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    
+}
+.topbar_menu_item:hover{
+    color: #b43030;
+}
