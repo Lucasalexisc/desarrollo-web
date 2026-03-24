@@ -30,3 +30,14 @@
 .topbar_menu_item:hover{
     color: #b43030;
 }
+
+table, th, td {
+    border: 1px solid #b43030;
+    padding: 10px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
