@@ -1,9 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+body{
+    background-color: #f3f3f3;
+}
 .topbar_about_me{
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 10px 20px;
-    background-color: #ffffff;
+    background-color: #cfe1b9;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     position: sticky;
     top: 0;
@@ -31,13 +35,116 @@
     color: #b43030;
 }
 
-table, th, td {
-    border: 1px solid #b43030;
+table,th,td,tr{
+    border: 6px solid #000000;
     padding: 10px;
     font-family: 'Ubuntu', sans-serif;
     font-size: 1.2rem;
     font-weight: 500;
-    color: #333;
+    color: #9b5d5d;
     text-decoration: none;
     transition: color 0.3s ease;
+}
+
+
+
+.team_logo{
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #000000;
+    padding: 5px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: inline-block;
+}
+
+.cup_logo{
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #000000;
+    padding: 5px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: right;
+    display: inline-block;
+    margin-left: auto;
+}
+.zona_libertadores{
+    background-color: #1bfc07;
+}
+.zona_sudamericana{
+    background-color: #007bff;
+}
+.zona_promocion{
+    background-color: #e1fa00;
+}
+.zona_descenso{
+    background-color: #d80f0f;
+}
+
+
+th,td,tr{
+    border: 5px solid #1a25be;
+    padding: 10px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #973636;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    background-color: rgb(236, 241, 245);
+}
+
+.league_title{
+
+    justify-content: center;
+    align-items: center;
+    margin: 15px auto;
+    width: 100%;
+    max-width: 1200px;
+    border: 5px solid #000000;
+}
+
+.national_cups_title{
+    margin: 15px auto;
+    width: 100%;
+    max-width: 1200px;
+    border: 5px solid #000000;
+    border-radius: 10px;
+}
+
+.international_cups_table{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px auto;
+    width: 100%;
+    max-width: 1200px;
+    border: 5px solid #000000; 
+    border-radius: 10px;
+}
+
+li{
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 1rem;
+    font-family: 'Ubuntu', sans-serif;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    background-color: rgb(27, 117, 196);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    text-align: left;
+    display: inline-block;
+}
+
+th{
+    color: #000000;
 }
