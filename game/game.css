@@ -1,0 +1,94 @@
+.maze {
+    position: relative;
+    width: 600px;
+    height: 400px;
+    background: #f0f0f0;
+    border: 5px solid #333;
+    margin: 0 auto;
+    overflow: hidden;
+    cursor: pointer; /* Cambia el cursor para precisión */
+    background-image: url(./assets/dwight_cry.jpg);
+}
+h1{
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 1rem;
+    font-family: 'Ubuntu', sans-serif;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    background-color: rgb(27, 117, 196);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    text-align: left;
+    display: inline-block;
+}
+
+/* Las Paredes */
+.wall {
+    position: absolute;
+    background-color: #2c3e50; /* Puedes usar texturas de oficina */
+    transition: background 0.3s;
+}
+
+/* Lógica de Colisión: Si el mouse toca una pared, aparece el Game Over */
+.wall:hover ~ .game-over {
+    display: flex;
+}
+
+/* Pantalla de Game Over */
+.game-over {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+    color: white;
+    display: none; /* Oculto por defecto */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    background-image: url('./assets/jim_prank.jpg');
+    background-size: cover;
+    background-position: center;
+ 
+}
+
+/* Diseño de las paredes (Ejemplo de niveles) */
+.w1 { width: 500px; height: 20px; top: 80px; left: 0; }
+.w2 { width: 20px; height: 60px; top: 0px; left: 400px; }
+.w3 { width: 300px; height: 20px; top: 280px; left: 0px; }
+.w4 { width: 20px; height: 100px; top: 200px; left: 200px; }
+.w5 { width: 200px; height: 20px; top: 150px; left: 200px; }
+
+/* La Meta */
+.goal {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    text-decoration: none;
+
+}
+
+.goal_1 {
+    position: absolute;
+    bottom: 150px;
+    text-decoration: none;
+
+}
+
+
+/* Pantalla de Victoria usando el target del ID en la URL */
+.win-screen {
+    display: none;
+    text-align: center;
+    padding: 20px;
+    background: #d4edda;
+}
+
+.win-screen:target {
+    display: block;
+}
