@@ -160,5 +160,42 @@ body{
 
 }
 
+.topbar_about_me{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    background-color: #274c77;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    border: 5px solid #8b8c89;
+    font-family: 'Ubuntu', sans-serif;
+    border-radius: 25px 25px 25px 25px;
+}
+.topbar_inline{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.topbar_menu_item{
+    display: inline-block;
+    margin-right: 15px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    background-color: #fffcf2;
+    
+}
+.topbar_menu_item:hover{
+    color: #b43030;
+}
+
+
+
 
 /* Colores utilizados:  https://coolors.co/palette/edede9-d6ccc2-f5ebe0-e3d5ca-d5bdaf */

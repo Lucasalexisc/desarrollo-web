@@ -81,6 +81,7 @@ h1{
     position: absolute;
     background-color: #2c3e50; /* Puedes usar texturas de oficina */
     transition: background 0.3s;
+    z-index: 1;
 }
 
 /* Lógica de Colisión: Si el mouse toca una pared, aparece el Game Over */
@@ -104,7 +105,12 @@ h1{
     background-image: url('./assets/jim_prank.jpg');
     background-size: cover;
     background-position: center;
- 
+    /* Let hover stay on the wall beneath; otherwise the overlay steals the cursor and :hover clears */
+    pointer-events: none;
+}
+
+.game-over button {
+    pointer-events: auto;
 }
 
 /* Diseño de las paredes (Ejemplo de niveles) */
