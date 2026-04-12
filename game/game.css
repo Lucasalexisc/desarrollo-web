@@ -1,6 +1,43 @@
 body{
-    background-color: #f1f0cc;
+    background-color: #faf0ca;
 }
+
+/* Barra de accesos */
+
+.topbar_about_me{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    background-color: #fff3b0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    border: 5px solid #8b8c89;
+    font-family: 'Ubuntu', sans-serif;
+    border-radius: 25px 25px 25px 25px;
+    padding-bottom: 10px;
+}
+.topbar_inline{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.topbar_menu_item{
+    display: inline-block;
+    margin-right: 15px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    background-color: #b8c0ff;
+    
+}
+
+
 /* Inicio de Clases del question.html*/
 .michael_image{
     float: left;
@@ -29,15 +66,17 @@ body{
 
 .maze {
     position: relative; 
-    width: 600px;
-    height: 400px;
+    width: 800px;
+    height: 600px;
     background: #f0f0f0;
     border: 5px solid #333;
     margin: 0 auto;
     overflow: hidden;
-    cursor: crosshair; /* Cambia el cursor para precisión */
+    cursor: crosshair; /* Tippo de cursor */
     background-image: url(./assets/dwight_cry.jpg);
+    background-size: cover;
 }
+
 
 .game_lobby_title_container{
 display: flex;
@@ -113,11 +152,11 @@ h1{
 }
 
 /* Diseño de las paredes (Ejemplo de niveles) */
-.w1 { width: 500px; height: 20px; top: 80px; left: 0; }
+.w1 { width: 750px; height: 20px; top: 80px; left: 0; }
 .w2 { width: 20px; height: 60px; top: 0px; left: 400px; }
-.w3 { width: 300px; height: 20px; top: 280px; left: 0px; }
-.w4 { width: 20px; height: 100px; top: 200px; left: 200px; }
-.w5 { width: 200px; height: 20px; top: 150px; left: 200px; }
+.w3 { width: 300px; height: 20px; top: 380px; left: 0px; }
+.w4 { width: 20px; height: 100px; top: 400px; left: 200px; }
+.w5 { width: 200px; height: 20px; top: 500px; left: 700px; }
 
 /* La Meta */
 .goal {
