@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
 body{
-    /* Color de fondo general de la página con transparencia */
-    background-color: #edede9; /* Color de Fondo*/
+  
+    background-color: #457b9d; 
     /* Tipografía principal que se usará en todo el sitio */
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 
     'Open Sans', 'Helvetica Neue', sans-serif; /* Fuente */
