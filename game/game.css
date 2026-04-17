@@ -13,6 +13,8 @@ body{
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     position: sticky;
     top: 0;
+    width: 50%;
+    margin: 0 auto;
     border: 5px solid #8b8c89;
     font-family: 'Ubuntu', sans-serif;
     border-radius: 25px 25px 25px 25px;
@@ -39,8 +41,11 @@ body{
 
 
 /* Inicio de Clases del question.html*/
+/*
 .michael_image{
     float: left;
+   display: flex;
+   
     margin-right: 10px;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -50,7 +55,8 @@ body{
     object-fit: cover;
 }
 .jim_image{
-   float: right;
+    display: flex;
+    flex-direction: column;
    margin-right: 300px;
    margin-top: 10px;
    margin-bottom: 10px;
@@ -59,23 +65,44 @@ body{
    height: 312px;
    object-fit: cover;
 }
+*/
+
+.question_container {
+    display: flex;
+    justify-content: center; /* Centra los dos bloques en la pantalla */
+    gap: 50px;              /* Espacio entre Dwight y Jim */
+    margin-top: 20px;
+}
+
+/* Estilo para los enlaces <a> */
+.question_container a {
+    display: flex;
+    flex-direction: column; /* Alinea la imagen arriba y el texto abajo */
+    align-items: center;    /* Centra el texto respecto a la imagen */
+    text-decoration: none;  /* Quita el subrayado del link */
+    color: inherit;
+}
+
+/* Ajuste de las imágenes (sacamos los floats y márgenes manuales) */
+.michael_image, .jim_image {
+    width: 422px;
+    height: 312px;
+    object-fit: cover;
+    margin-bottom: 10px; /* Espacio entre el GIF y el texto de abajo */
+}
+
+/* Estilo opcional para el texto "Hoy es jueves" */
+.question_container p {
+    margin: 0;
+    background-color: #8d775f;
+    color: #ffc300;
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
 /* Fin de Clases del question.html*/
 
 
-/* Inicio de Clases del game.html*/
-
-.maze {
-    position: relative; 
-    width: 800px;
-    height: 600px;
-    background: #f0f0f0;
-    border: 5px solid #333;
-    margin: 0 auto;
-    overflow: hidden;
-    cursor: crosshair; /* Tippo de cursor */
-    background-image: url(./assets/dwight_cry.jpg);
-    background-size: cover;
-}
 
 
 .game_lobby_title_container{
@@ -98,91 +125,5 @@ justify-content: center;
     color: #ffc300;
 }
     
-/*
-h1{
-    color: #ffffff;
-    font-weight: 400;
-    font-size: 1rem;
-    font-family: 'Ubuntu', sans-serif;
-    text-decoration: none;
-    transition: color 0.3s ease;
-    background-color: rgb(27, 117, 196);
-    padding: 10px;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin: 10px;
-    text-align: left;
-    display: inline-block;
-}
-*/
-/* Las Paredes */
-.wall {
-    position: absolute;
-    background-color: #2c3e50; 
-    transition: background 0.3s;
-    z-index: 1;
-}
 
 
-.wall:hover ~ .game-over {
-    display: flex;
-}
-
-/* Pantalla de Game Over */
-.game-over {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    color: white;
-    display: none; 
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    z-index: 10;
-    background-image: url('./assets/jim_prank.jpg');
-    background-size: cover;
-    background-position: center;
-    pointer-events: none;
-}
-
-.game-over button {
-    pointer-events: auto;
-}
-
-/* Diseño de las paredes (Ejemplo de niveles) */
-.w1 { width: 750px; height: 20px; top: 80px; left: 0; }
-.w2 { width: 20px; height: 60px; top: 0px; left: 400px; }
-.w3 { width: 300px; height: 20px; top: 380px; left: 0px; }
-.w4 { width: 20px; height: 100px; top: 400px; left: 200px; }
-.w5 { width: 200px; height: 20px; top: 500px; left: 700px; }
-
-/* La Meta */
-.goal {
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
-    text-decoration: none;
-
-}
-
-.goal_1 {
-    position: absolute;
-    bottom: 150px;
-    text-decoration: none;
-
-}
-
-
-/* Pantalla de Victoria usando el target del ID en la URL */
-.win-screen {
-    display: none;
-    text-align: center;
-    padding: 20px;
-    background: #d4edda;
-}
-
-.win-screen:target {
-    display: block;
-}

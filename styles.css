@@ -2,174 +2,119 @@
 
 body{
   
-    background-color: #457b9d; 
-    /* Tipografía principal que se usará en todo el sitio */
+    background-color: #faf3dd; 
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 
-    'Open Sans', 'Helvetica Neue', sans-serif; /* Fuente */
-    /* Tamaño base de la fuente */
-    font-size: 1.2rem; /* Tamaño de la fuente */
-    /* Altura de línea para separar mejor las líneas de texto */
-    line-height: 1.5; /* Altura de línea */
-    /* Color principal del texto */
-    color: #333; /* Color del texto */
-    /* Elimina el margen por defecto del navegador */
-    margin: 0; /* Margen */ 
-    /* Elimina el padding por defecto del navegador */
-    padding: 0; /* Padding por defecto*/
-    /* Hace que el cálculo de ancho/alto incluya border y padding */
-    box-sizing: border-box; /* Box-sizing por defecto */
-    /* Centra el texto por defecto */
-    text-align: center;     /* Centra el texto por defecto */
-    /* Configuración del subrayado por defecto del texto */
-    text-decoration-color: #333; /* Color del subrayado por defecto */
-    text-decoration-thickness: 2px; /* Grosor del subrayado por defecto */
-    text-decoration-style: solid; /* Estilo del subrayado por defecto */
-    text-decoration-skip-ink: none; /* Saltar el subrayado por defecto */
+    'Open Sans', 'Helvetica Neue', sans-serif; 
+    font-size: 1.2rem; 
+    line-height: 1.5; 
+    color: #333; 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+    text-align: center;     
+    text-decoration-color: #333; 
+    text-decoration-thickness: 2px; 
+    text-decoration-style: solid; 
+    text-decoration-skip-ink: none; 
 }
 
 .topbar{
-    /* Usa flexbox para alinear elementos en una fila */
     display: flex;
-    /* Centra verticalmente los elementos dentro de la barra */
     align-items: center;
-    /* Deja espacio entre el bloque izquierdo y el botón de la derecha */
     justify-content: space-between;
-    /* Espaciado interno (arriba/abajo 10px, izquierda/derecha 20px) */
     padding: 10px 20px;
-    /* Color de fondo de la barra superior */
     background-color: #f5ebe0;
-    /* Sombra suave debajo de la barra */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    /* Hace que la barra se quede pegada arriba al hacer scroll */
     position: sticky;
     top: 0;
     border-bottom: 1px solid #d6ccc2;
 }
 
 .topbar-left{
-    /* Agrupa logo y nombre en una fila */
     display: flex;
-    /* Centra verticalmente logo y texto */
     align-items: center;
-    /* Espacio entre logo y nombre */
     gap: 10px;
 }
 .logo_dundler_mifflin{
-    /* Altura fija del logo; el ancho se ajusta proporcionalmente */
     height: 50px;
 }
 .topbar-name{
-    /* Fuente especial para el nombre de la marca */
     font-family: 'Ubuntu', sans-serif;
-    /* Tamaño de letra del nombre */
     font-size: 1.2rem;
-    /* Grosor de la letra (400 = normal) */
     font-weight: 400;
 }
 #button_menu{
-    /* Color de fondo del botón del menú */
-    background-color: #d5bdaf;
-    /* Color del texto del botón */
+    background-color: #c8d5b9;
     color: #ffffff;
-    /* Quita el borde por defecto del botón */
     border: none;
-    /* Espaciado interno del botón */
     padding: 10px 20px;
-    /* Bordes redondeados del botón */
     border-radius: 5px;
-    /* Cambia el cursor al pasar por encima del botón */
     cursor: pointer;
 }
 .main_title{
-    /* Fondo del título principal */
-    background-color: #d5bdaf;
+    background-color: #c8d5b9;
+    border: 5px solid #68b0ab;
     border-radius: 10px;    
     padding: 10px;
-    /* Fuente usada en el título */
-    display: inline-block; /* Para que solamente tome el tamaño del texto*/
+    display: inline-block; 
     font-family: 'Ubuntu', sans-serif;
-    /* Tamaño de letra del título */
     font-size: 2rem;
-    /* Grosor de letra (700 = bold/negrita) */
     font-weight: 700;
-    /* Color del texto del título */
     color: #333;
-    /* Activa subrayado en el título */
     text-decoration: underline;
     text-decoration-color: #333;
 }
 
 .container_image{
-    /* Ancho fijo de la tarjeta */
     width: 260px;
-    /* Espaciado interno de la tarjeta */
     padding: 16px;
-    /* Color de fondo de la tarjeta */
-    background-color: #d5bdaf;
-    /* Bordes redondeados de la tarjeta */
+    background-color: #c8d5b9;
+    border: 5px solid #68b0ab;
     border-radius: 20px;
-    /* Alinea el texto interno a la izquierda */
     text-align: center;
-    /* Tipografía usada dentro de la tarjeta */
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 
     'Open Sans', 'Helvetica Neue', sans-serif;
-    /* Centra la tarjeta horizontalmente y agrega margen vertical */
     margin: 20px auto;
 }
 
 .imagen_michael{
-    /* La imagen ocupa todo el ancho disponible del contenedor */
     width: 100%;
-    /* Bordes redondeados para la imagen */
     border-radius: 12px;
-    /* Hace que la imagen se comporte como un bloque (no como inline) */
     display: block;
-    /* Espacio debajo de la imagen antes del siguiente elemento */
     margin-bottom: 12px;
-    /* Recorta la imagen para que llene el espacio sin deformarse */
     object-fit: cover;
+    
 }
 .name_title_card{
-    /* Fuente del nombre de la persona */
     font-family: 'Ubuntu', sans-serif;
-    /* Tamaño de letra del nombre */
     font-size: 1.8rem;
-    /* Grosor de letra (negrita) */
     font-weight: 700;
-    /* Color del texto del nombre */
     color: #333;
-    /* Centra el texto del nombre */
     text-align: center;
 }
 .job_title_card{
-    /* Fuente del cargo de la persona */
     font-family: 'Ubuntu', sans-serif;
-    /* Tamaño de letra del cargo */
     font-size: 1.2rem;
-    /* Grosor de letra del cargo */
     font-weight: 400;
-    /* Color del texto del cargo */
+
     color: #333;
-    /* Centra el texto del cargo */
+
     text-align: center;
 }
 .comment_text{
-    /* Fuente del texto de comentario */
     font-family: 'Ubuntu', sans-serif;
-    /* Tamaño de letra del comentario */
-
 }
 
 .topbar_about_me{
     display: flex;
+    width: 50%;
+    margin: 0 auto;
     align-items: center;
     justify-content: center;
     padding: 10px 20px;
-    background-color: #274c77;
+    background-color: #68b0ab;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    position: sticky;
-    top: 0;
-    border: 5px solid #8b8c89;
+    border: 5px solid #8fc0a9;
     font-family: 'Ubuntu', sans-serif;
     border-radius: 25px 25px 25px 25px;
 }
@@ -188,12 +133,10 @@ body{
     color: #333;
     text-decoration: none;
     transition: color 0.3s ease;
-    background-color: #fffcf2;
+    background-color: #c8d5b9;
     
 }
-.topbar_menu_item:hover{
-    color: #b43030;
-}
+
 
 
 

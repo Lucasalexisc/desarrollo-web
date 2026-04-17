@@ -1,21 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Saira+Stencil:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 body{
-    background-color: #e7ecef;
+    background-color: #faf3dd;
 }
 .section_about_me{
     font-family: 'Josefin Slab', serif;
 }
 .topbar_about_me{
     display: flex;
+    width: 50%;
+    margin: 0 auto;
     align-items: center;
     justify-content: center;
     padding: 10px 20px;
-    background-color: #274c77;
+    background-color: #68b0ab;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    position: sticky;
-    top: 0;
-    border: 5px solid #8b8c89;
+    border: 5px solid #8fc0a9;
     font-family: 'Ubuntu', sans-serif;
     border-radius: 25px 25px 25px 25px;
 }
@@ -34,12 +34,10 @@ body{
     color: #333;
     text-decoration: none;
     transition: color 0.3s ease;
-    background-color: #fffcf2;
+    background-color: #c8d5b9;
     
 }
-.topbar_menu_item:hover{
-    color: #b43030;
-}
+
 
 table,th,td,tr{
     border-collapse: collapse;

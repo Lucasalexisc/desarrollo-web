@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .contenedor {
+            background-color: orange;
+            text-align: center;
+        }
+
+        .aside,
+        .main {
+            display: inline-block;
+            vertical-align: top;
+            height: 80vh; 
+        }
+
+        .aside {
+            background-color: rgb(244, 249, 0);
+            width: 25%;
+        }
+
+        .aside li {
+            list-style-type: none;
+        }
+
+        .main {
+            background-color: violet;
+            width: 70%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="contenedor">
+
+        <div class="aside">
+            <ul>
+                <li><a href="#">Link 1</a></li>
+                <li><a href="#">Link 2</a></li>
+                <li><a href="#">Link 3</a></li>
+                <li><a href="#">Link 4</a></li>
+                <li><a href="#">Link 5</a></li>
+            </ul>
+        </div>
+
+        <div class="main">
+            <h1>Título de mi Playlist</h1>
+            <iframe width="800" height="600" src="https://www.youtube.com/embed/v5PZw1Wr-l0?si=XRvx0l5MjUTv0u6b" title="YouTube video player" 
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+    </section>
+
+</body>
+
+</html>
